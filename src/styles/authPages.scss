@@ -1,0 +1,162 @@
+.authpage {
+	.large_screen {
+		.left_side {
+			padding: 0;
+
+			.img_container {
+				width: 100%;
+				height: 100vh;
+
+				img {
+					width: 100%;
+					height: 100vh;
+					object-fit: center;
+				}
+			}
+		}
+
+		.right_side {
+			padding: 15px 20px;
+			position: relative;
+			max-height: 100vh;
+			overflow-y: scroll;
+			-ms-overflow-style: none;
+			scrollbar-width: none;
+
+			.logo_header {
+				padding: 20px;
+
+				.img_container {
+					width: 100%;
+					height: 100%;
+
+					img {
+						width: 100%;
+						height: 100%;
+					}
+				}
+
+				p {
+					font-size: 18px;
+					line-height: 13px;
+					text-align: center;
+					color: #4d4f5c;
+					opacity: 0.5;
+					padding-top: 20px;
+				}
+			}
+
+			.auth_form_container {
+				margin: 15px 0;
+				display: flex;
+				align-items: center;
+				flex-direction: column;
+				width: 100%;
+
+				.auth_form {
+					max-width: 400px;
+					width: 100%;
+
+					.input_container {
+						margin: 20px 0;
+
+						input {
+							width: 100%;
+							border: none;
+							outline: none;
+							font-size: 15px;
+							line-height: 25px;
+							text-align: left;
+							color: #43425d;
+							border-bottom: 2px solid #e9e9f0;
+						}
+					}
+
+					.checkbox_input {
+						input {
+							width: 18px;
+							height: 18px;
+						}
+
+						span {
+							margin: -3px;
+							position: absolute;
+							margin-left: 15px;
+
+							font-size: 15px;
+							line-height: 25px;
+							text-align: left;
+							color: #43425d;
+						}
+
+						p {
+							padding-left: 34px;
+							font-size: 10px;
+							line-height: 15px;
+							text-align: left;
+							color: #43425d;
+						}
+					}
+
+					.forget_password {
+						text-decoration: underline;
+						font-size: 15px;
+						line-height: 25px;
+						text-align: right;
+						color: #11b1dd;
+
+						text-align: right;
+					}
+
+					.login_buttons {
+						.link {
+							display: flex;
+							justify-content: center;
+
+							button {
+								height: 45px;
+								width: 100%;
+								border-radius: 4px;
+								font-size: 18px;
+								border: 1px solid #43425d;
+								background: transparent;
+							}
+						}
+
+						:first-child .link button {
+							background: #11b1dd;
+							color: #fff;
+							border: none;
+						}
+					}
+
+					.social_buttons_row {
+						display: flex;
+						justify-content: space-evenly;
+
+						.circle_button {
+							cursor: pointer;
+							width: 45px;
+							height: 45px;
+							border-radius: 50%;
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							background: #fff;
+							filter: drop-shadow(0px 2px 15px rgba(58, 204, 225, 0.46));
+						}
+					}
+				}
+			}
+
+			.privacy_policy {
+				p {
+					text-align: center;
+				}
+			}
+		}
+		.right_side::-webkit-scrollbar {
+			display: none;
+		}
+	}
+}
