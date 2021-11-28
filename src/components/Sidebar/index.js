@@ -49,7 +49,7 @@ const Sidebar = () => {
 						<Link to="/ventures" className={`link ${isActive('/ventures')}`}>
 							<li>
 								<GoProject className="sidebar_icon" />
-								GoProject
+								Ventures
 							</li>
 						</Link>
 

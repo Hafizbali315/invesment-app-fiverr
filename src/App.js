@@ -1,10 +1,12 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
-import HomePage from './pages/home'
 import LoginPage from './pages/login'
 import SignupPage from './pages/signup'
-import Sidebar from './components/Sidebar/index'
+import HomePage from './pages/home'
 import DashboardPage from './pages/dashboard'
+import ColloboratorsPage from './pages/collaborators'
+
+import Sidebar from './components/Sidebar/index'
 import Header from './components/Header/index'
 
 function App() {
@@ -27,7 +29,10 @@ function App() {
 							<Routes>
 								<Route path="/" element={<HomePage />} />
 								<Route path="/dashboard" element={<DashboardPage />} />
+
 								{/* <Route path="/dashboard" element={<DashboardPage />} /> */}
+
+								<Route path="/collaborators" element={<ColloboratorsPage />} />
 							</Routes>
 						</div>
 					</div>
