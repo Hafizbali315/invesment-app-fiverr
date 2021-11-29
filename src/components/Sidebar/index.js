@@ -74,7 +74,7 @@ const Sidebar = () => {
 							</li>
 						</Link>
 
-						<Link to="/archieved" className={`link ${isActive('/archieved')}`}>
+						<Link to="/archieved-ventures" className={`link ${isActive('/archieved-ventures')}`}>
 							<li>
 								<IoIosHelpBuoy className="sidebar_icon" />
 								Archived

@@ -8,6 +8,7 @@ import ColloboratorsPage from './pages/collaborators'
 
 import Sidebar from './components/Sidebar/index'
 import Header from './components/Header/index'
+import ArchievedVenturesPage from './pages/archieved'
 
 function App() {
 	return (
@@ -33,6 +34,7 @@ function App() {
 								{/* <Route path="/dashboard" element={<DashboardPage />} /> */}
 
 								<Route path="/collaborators" element={<ColloboratorsPage />} />
+								<Route path="/archieved-ventures" element={<ArchievedVenturesPage />} />
 							</Routes>
 						</div>
 					</div>
