@@ -9,6 +9,7 @@ import ColloboratorsPage from './pages/collaborators'
 import Sidebar from './components/Sidebar/index'
 import Header from './components/Header/index'
 import ArchievedVenturesPage from './pages/archieved'
+import Billingspage from './pages/billings'
 
 function App() {
 	return (
@@ -31,9 +32,8 @@ function App() {
 								<Route path="/" element={<HomePage />} />
 								<Route path="/dashboard" element={<DashboardPage />} />
 
-								{/* <Route path="/dashboard" element={<DashboardPage />} /> */}
-
 								<Route path="/collaborators" element={<ColloboratorsPage />} />
+								<Route path="/billings" element={<Billingspage />} />
 								<Route path="/archieved-ventures" element={<ArchievedVenturesPage />} />
 							</Routes>
 						</div>
