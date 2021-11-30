@@ -1,0 +1,21 @@
+.ventures_page {
+	.large_screen {
+		padding: 25px;
+
+		.create_new_venture_btn {
+			text-align: right;
+
+			button {
+				padding: 0 20px;
+				height: 40px;
+				border-radius: 5px;
+				background: #11b1dd;
+				font-size: 16px;
+				text-align: center;
+				color: #fff;
+				outline: none;
+				border: none;
+			}
+		}
+	}
+}

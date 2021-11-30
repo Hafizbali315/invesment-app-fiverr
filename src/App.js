@@ -10,6 +10,7 @@ import Sidebar from './components/Sidebar/index'
 import Header from './components/Header/index'
 import ArchievedVenturesPage from './pages/archieved'
 import Billingspage from './pages/billings'
+import VenturesPage from './pages/ventures'
 
 function App() {
 	return (
@@ -31,6 +32,7 @@ function App() {
 							<Routes>
 								<Route path="/" element={<HomePage />} />
 								<Route path="/dashboard" element={<DashboardPage />} />
+								<Route path="/ventures" element={<VenturesPage />} />
 
 								<Route path="/collaborators" element={<ColloboratorsPage />} />
 								<Route path="/billings" element={<Billingspage />} />

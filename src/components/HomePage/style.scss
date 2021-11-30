@@ -53,6 +53,13 @@
 }
 
 .news_feed_section {
+	border-radius: 10px;
+	background: #fff;
+	border: 1px solid #ebebeb;
+	box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.1);
+
+	padding: 30px;
+
 	.large_screen {
 		.header {
 			display: flex;

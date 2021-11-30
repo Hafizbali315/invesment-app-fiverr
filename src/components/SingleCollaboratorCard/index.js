@@ -2,7 +2,7 @@ import { BsThreeDotsVertical } from 'react-icons/bs'
 import { FaRegEnvelope } from 'react-icons/fa'
 import './style.scss'
 
-const CollaboratorCard = ({ profilePic, name, designation, collaboration }) => {
+const SingleCollaboratorCard = ({ profilePic, name, designation, collaboration }) => {
 	return (
 		<div className="collaborator_card">
 			<div className="row">
@@ -38,4 +38,4 @@ const CollaboratorCard = ({ profilePic, name, designation, collaboration }) => {
 	)
 }
 
-export default CollaboratorCard
+export default SingleCollaboratorCard

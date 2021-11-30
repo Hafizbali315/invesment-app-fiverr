@@ -1,0 +1,52 @@
+.donut_chart_section {
+	.chart_container {
+		display: flex;
+		justify-content: center;
+
+		.chart {
+			width: 250px;
+			height: 250px;
+		}
+	}
+
+	.details {
+		margin: 20px 20px;
+		.venture_one,
+		.venture_two {
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+
+			padding: 10px 0;
+
+			.circle {
+				width: 22px;
+				height: 22px;
+				border-radius: 50%;
+			}
+
+			h6 {
+				font-weight: 500;
+				font-size: 14px;
+				letter-spacing: 0.03em;
+				color: #0f0f0f;
+				padding: 0;
+				margin: 0;
+			}
+		}
+
+		.venture_one {
+			.circle {
+				background-color: #ff7141;
+				margin-right: -30px;
+			}
+		}
+
+		.venture_two {
+			.circle {
+				background-color: #92a8fd;
+				margin-right: -30px;
+			}
+		}
+	}
+}

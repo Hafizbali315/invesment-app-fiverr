@@ -1,13 +1,15 @@
-import '../styles/collaboratorsPage.scss'
+import { BsThreeDotsVertical } from 'react-icons/bs'
+import { RiShareBoxLine } from 'react-icons/ri'
+import SingleCollaboratorCard from './../SingleCollaboratorCard/index'
 
-// Collaborators images
-import CollaboratorImg1 from '../assets/CollaboratorPage/CollaboratorImg1.png'
-import CollaboratorImg2 from '../assets/CollaboratorPage/CollaboratorImg2.png'
-import CollaboratorImg3 from '../assets/CollaboratorPage/CollaboratorImg3.png'
-import CollaboratorImg4 from '../assets/CollaboratorPage/CollaboratorImg4.png'
-import SingleCollaboratorCard from '../components/SingleCollaboratorCard'
+import CollaboratorImg1 from '../../assets/CollaboratorPage/CollaboratorImg1.png'
+import CollaboratorImg2 from '../../assets/CollaboratorPage/CollaboratorImg2.png'
+import CollaboratorImg3 from '../../assets/CollaboratorPage/CollaboratorImg3.png'
+import CollaboratorImg4 from '../../assets/CollaboratorPage/CollaboratorImg4.png'
 
-const ColloboratorsPage = () => {
+import './style.scss'
+
+const CollaboratorsListCard = () => {
 	const CollaboratorsArray = [
 		{ id: 0, profilePic: CollaboratorImg1, name: 'David James', designation: 'Lawyer', collaboration: 'Collaborating on Venture 1' },
 		{ id: 1, profilePic: CollaboratorImg2, name: 'David James', designation: 'Adviser', collaboration: 'Collaborating on Venture 3' },
@@ -55,28 +57,35 @@ const ColloboratorsPage = () => {
 			collaboration: 'Collaborating on Venture 4 and Venture 1',
 		},
 	]
-
 	return (
-		<div className="colloborators_page">
-			<div className="large_screen">
-				<div className="header">
-					<h1>Collaborators</h1>
+		<div className="collaborator_list_card">
+			<div className="heading">
+				<h1>Collaborators</h1>
 
-					<div className="input_container">
-						<input type="text" placeholder="Search Name…" />
-					</div>
+				<div className="right_icons">
+					<RiShareBoxLine className="icon" />
+					<BsThreeDotsVertical className="icon" />
 				</div>
+			</div>
 
-				<div className="my-4 row">
-					{CollaboratorsArray.map((c) => (
-						<div className="my-3 col-lg-6">
-							<SingleCollaboratorCard profilePic={c.profilePic} name={c.name} designation={c.designation} collaboration={c.collaboration} />
-						</div>
-					))}
-				</div>
+			<div className="collaborators">
+				<ul>
+					{CollaboratorsArray.map((c) => {
+						return (
+							c.id <= 4 && (
+								<SingleCollaboratorCard
+									profilePic={c.profilePic}
+									name={c.name}
+									designation={c.designation}
+									collaboration={c.collaboration}
+								/>
+							)
+						)
+					})}
+				</ul>
 			</div>
 		</div>
 	)
 }
 
-export default ColloboratorsPage
+export default CollaboratorsListCard
