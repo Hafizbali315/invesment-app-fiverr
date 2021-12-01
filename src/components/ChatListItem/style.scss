@@ -1,0 +1,38 @@
+.chat_list_card {
+	height: 68px;
+	border-radius: 7px;
+	background: #fff;
+	box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.03);
+	padding: 10px 15px;
+
+	display: flex;
+	align-items: center;
+
+	position: relative;
+
+	.chat_list_card_info {
+		line-height: 5px;
+
+		.name {
+			padding-top: 17px;
+			font-weight: 500;
+			font-size: 15px;
+			color: #2d3748;
+		}
+
+		.new_msg {
+			font-weight: normal;
+			font-size: 13px;
+			line-height: 12px;
+			color: #728296;
+		}
+	}
+
+	.chat_list_date {
+		position: absolute;
+		right: 7px;
+		top: 7px;
+		font-size: 12px;
+		color: #728296;
+	}
+}

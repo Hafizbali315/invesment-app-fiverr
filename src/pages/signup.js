@@ -41,7 +41,7 @@ const SignupPage = () => {
 									<input type="password" className="password" placeholder="Confirm password" />
 								</div>
 
-								<div className=" mt-4 mb-4">
+								<div className="mt-4 mb-4 ">
 									<div className="checkbox_input">
 										<input type="checkbox" /> <span> I am an accredited investor</span>
 										<p>
@@ -53,12 +53,12 @@ const SignupPage = () => {
 								</div>
 
 								<div className=" login_buttons">
-									<Link className="link " to="/signup ">
+									<Link className="link " to="/ ">
 										<button style={{ width: '180px' }}>Sign up</button>
 									</Link>
 								</div>
 
-								<div className="social_buttons_row my-4">
+								<div className="my-4 social_buttons_row">
 									<div className="circle_button facebook_button">
 										<img src={Facebook} alt="Facebook" />
 									</div>

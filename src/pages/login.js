@@ -37,7 +37,7 @@ const LoginPage = () => {
 									<input type="password" className="password" placeholder="Password" />
 								</div>
 
-								<div className="row mt-5 mb-4">
+								<div className="mt-5 mb-4 row">
 									<div className="col-6">
 										<div className="checkbox_input">
 											<input type="checkbox" /> <span>Remember Me</span>
@@ -53,7 +53,7 @@ const LoginPage = () => {
 
 								<div className="row login_buttons">
 									<div className="col-6">
-										<Link className="link" to="/login">
+										<Link className="link" to="/">
 											<button>Login</button>
 										</Link>
 									</div>
@@ -65,7 +65,7 @@ const LoginPage = () => {
 									</div>
 								</div>
 
-								<div className="social_buttons_row my-5">
+								<div className="my-5 social_buttons_row">
 									<div className="circle_button facebook_button">
 										<img src={Facebook} alt="Facebook" />
 									</div>
