@@ -1,0 +1,25 @@
+.dashboard_page {
+	padding: 25px;
+
+	.buttons_row {
+		display: flex;
+		justify-content: space-between;
+
+		button {
+			padding: 0 20px;
+			font-size: 16px;
+			border: none;
+			outline: none;
+			height: 40px;
+			color: #8a8080;
+			background-color: #fff;
+			border: 1px solid #bfbfbf;
+			border-radius: 5px;
+
+			&:first-child {
+				background-color: #14a9d4;
+				color: #fff;
+			}
+		}
+	}
+}
